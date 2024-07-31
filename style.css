@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "sj";
+  src: url("./SutonnyMJ Regular.ttf");
+}
+@font-face {
+  font-family: "sd";
+  src: url("SolaimanLipi_20-04-07.ttf");
+}
+
+*{
+  font-family: "sd",serif;
+}
+
+strong{
+  font-size: 20px;
+  color:red;
+  font-weight: bolder;
+  
+}
