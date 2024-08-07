@@ -21,7 +21,7 @@
 <body>
   
        
-  
+    <div id="current-section">সূচি</div>
   
     <div id="s0">
     
@@ -149,7 +149,36 @@
   <b>
   স্বত্ব অনিমেষ দত্ত &copy; ২০২৪
   উৎসর্গ নিরুপমাকে!
-
+<script>
+    document.addEventListener('scroll', () => {
+      const sectionNames = {
+        s0: 'সূচি',
+        s1: 'আখ্যা নেই নিরুপমা',
+        s2: 'বাজে আবদার',
+        s4: 'বিষাদযোগ',
+        s5: 'ভ্রান্তিতে স্থিতি',
+        s6: 'উত্তরে এককের লগ',
+        s7: 'স্বার্থান্বেষী অনিমেষ',
+        s8: 'কেনো অনিমেষ?',
+        s9: 'হেঁয়ালি ভুলে'
+      };
+    
+      const sections = Object.keys(sectionNames);
+      const currentSection = document.getElementById('current-section');
+      let currentId = 's0';
+    
+      sections.forEach(id => {
+        const div = document.getElementById(id);
+        const rect = div.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          currentId = id;
+        }
+      });
+    
+      currentSection.textContent = sectionNames[currentId];
+    });
+</script>
+    
 <script src="main.js"></script>
 </body>
   </html>
