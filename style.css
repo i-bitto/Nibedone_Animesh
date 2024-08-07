@@ -54,3 +54,56 @@ strong{
             z-index: 500;
         }
 
+ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .introjs-tooltip {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .introjs-tooltiptext {
+      font-size: 15px;
+    }
+    .introjs-arrow {
+      display: none;
+    }
+    .introjs-tooltipbuttons {
+      text-align: right;
+    }
+    .introjs-button {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .introjs-helperNumberLayer,
+    .introjs-progressbar {
+      display: none;
+    }
+    
+     #s0{
+     
+      top: 10px;
+      left: 10px;
+      background: #ffffff;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+}
